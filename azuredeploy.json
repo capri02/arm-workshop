@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "variables": {},
+    "resources": [
+        {
+            "name": "armtutstgacct",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-04-01",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "displayName": "armtutstgacct"
+            },
+            "sku": {
+                "name":"Standard_LRS",
+            },
+            "kind":"Storage",
+            "properties":{}
+        }
+    ],
+    "outputs": {}
+}
